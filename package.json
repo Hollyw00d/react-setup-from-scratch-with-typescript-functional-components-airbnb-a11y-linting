@@ -4,16 +4,14 @@
   "description": "- <a href=\"https://www.udemy.com/course/mastering-react-with-interview-questions-estore-project-nirmal-joshi/\">Mastering React With Interview Questions,eStore Project-2023 (Udemy course) by Nirmal Joshi</a>",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "webpack serve --config webpack/webpack.config.js --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.9",
+    "@babel/plugin-transform-runtime": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
