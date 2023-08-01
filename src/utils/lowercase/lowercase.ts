@@ -1,4 +1,4 @@
-function lowerCase(text) {
+function lowerCase(text: string) {
   return text.toLowerCase();
 }
 
