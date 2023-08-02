@@ -1,5 +1,5 @@
-import React from 'react';
 import lowerCase from '../../utils/lowercase/lowercase';
+import ClickCounter from '../ClickCounter/ClickCounter';
 import './App.css';
 import image from '../../images/react-logo.png';
 import cover from '../../images/cover.svg';
@@ -14,6 +14,7 @@ function App() {
       </p>
       <h2>SVG Image</h2>
       <img src={cover} alt="React Cover" width="300" />
+      <ClickCounter />
     </div>
   );
 }
