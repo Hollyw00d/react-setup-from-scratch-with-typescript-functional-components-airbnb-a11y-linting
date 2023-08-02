@@ -4,7 +4,9 @@
   "description": "- <a href=\"https://www.udemy.com/course/mastering-react-with-interview-questions-estore-project-nirmal-joshi/\">Mastering React With Interview Questions,eStore Project-2023 (Udemy course) by Nirmal Joshi</a>",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config webpack/webpack.config.js --open"
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
+    "build": "webpack --config webpack/webpack.config.js --env env=prod",
+    "buildopen": "npx live-server --open=dist/index.html"
   },
   "keywords": [],
   "author": "",
@@ -27,12 +29,15 @@
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "html-webpack-plugin": "^5.5.3",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.0.0",
     "style-loader": "^3.3.3",
     "typescript": "^5.1.6",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
   },
   "dependencies": {
     "react": "^18.2.0",
