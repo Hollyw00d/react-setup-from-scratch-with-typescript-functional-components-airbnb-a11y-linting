@@ -4,7 +4,7 @@
   "description": "- <a href=\"https://www.udemy.com/course/mastering-react-with-interview-questions-estore-project-nirmal-joshi/\">Mastering React With Interview Questions,eStore Project-2023 (Udemy course) by Nirmal Joshi</a>",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss,md}\"",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet",
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",

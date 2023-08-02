@@ -1,5 +1,3 @@
-function lowerCase(text: string) {
+export default function lowerCase(text: string) {
   return text.toLowerCase();
 }
-
-export default lowerCase;

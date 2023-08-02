@@ -5,7 +5,7 @@ import './App.css';
 import image from '../../images/react-logo.png';
 import cover from '../../images/cover.svg';
 
-function App() {
+export default function App() {
   return (
     <div>
       <h1>{lowerCase('My React + Webpack Template')}</h1>
@@ -19,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
