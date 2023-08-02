@@ -1,3 +1,4 @@
+import React from 'react';
 import lowerCase from '../../utils/lowercase/lowercase';
 import ClickCounter from '../ClickCounter/ClickCounter';
 import './App.css';

@@ -3,12 +3,19 @@
     "browser": true,
     "node": true
   },
-  "extends": ["airbnb", "plugin:jsx-a11y/recommended", "prettier"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
   "parserOptions": {
+    "project": "./tsconfig.json",
     "sourceType": "module"
   },
   "plugins": ["jsx-a11y"],
   "rules": {
     "semi": "error"
-  }
+  },
+  "ignorePatterns": ["webpack/*", "node_modules/*"]
 }
