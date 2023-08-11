@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss,md}\"",
-    "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet",
+    "lint": "eslint . --ext .ts,.tsx,.js --quiet",
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "buildopen": "npx live-server --open=build/index.html"
@@ -25,10 +25,11 @@
     "@typescript-eslint/parser": "^6.2.1",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
-    "eslint": "^8.45.0",
+    "eslint": "^8.46.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-commonjs": "^1.0.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
