@@ -18,5 +18,5 @@
   "rules": {
     "semi": "error"
   },
-  "ignorePatterns": ["webpack/*", "node_modules/*"]
+  "ignorePatterns": ["webpack/*", "node_modules/*", "build/"]
 }
