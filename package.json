@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss,md}\"",
-    "lint": "eslint . --ext .ts,.tsx,.js --quiet",
+    "lint": "eslint . --ext .ts,.tsx,.js",
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "buildopen": "npx live-server --open=build/index.html"
