@@ -2,17 +2,21 @@
   "name": "mastering-react-with-interview-questions-udemy",
   "version": "1.0.0",
   "description": "- <a href=\"https://www.udemy.com/course/mastering-react-with-interview-questions-estore-project-nirmal-joshi/\">Mastering React With Interview Questions,eStore Project-2023 (Udemy course) by Nirmal Joshi</a>",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss,md}\"",
-    "lint": "eslint . --ext .ts,.tsx,.js",
-    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
-    "buildopen": "npx live-server --open=build/index.html"
+    "buildopen": "npx live-server --open=build/index.html",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,css,scss,md}\"",
+    "lint": "eslint . --ignore-pattern package.json --ignore-pattern package-lock.json --ext .ts,.tsx,.js,.json",
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/plugin-transform-runtime": "^7.22.9",
@@ -31,6 +35,7 @@
     "eslint-config-prettier": "^8.9.0",
     "eslint-plugin-commonjs": "^1.0.2",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.0",
@@ -45,9 +50,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }

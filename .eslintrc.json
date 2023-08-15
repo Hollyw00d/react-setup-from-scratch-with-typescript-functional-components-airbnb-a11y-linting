@@ -36,9 +36,19 @@
       }
     }
   ],
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "extends": ["plugin:json/recommended-with-comments"],
   "rules": {
     "semi": "error",
     "no-console": "warn"
   },
-  "ignorePatterns": ["node_modules", "build"]
+  "ignorePatterns": [
+    "node_modules",
+    "build",
+    "package.json",
+    "package-lock.json"
+  ]
 }
