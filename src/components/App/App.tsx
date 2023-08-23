@@ -1,7 +1,6 @@
 import React from 'react';
 import lowerCase from '../../utils/lowercase/lowercase';
 import ClickCounter from '../ClickCounter/ClickCounter';
-import './App.css';
 import image from '../../images/react-logo.png';
 import cover from '../../images/cover.svg';
 
