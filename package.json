@@ -9,6 +9,7 @@
   "scripts": {
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "buildopen": "npx live-server --open=build/index.html",
+    "watch": "webpack --config webpack/webpack.config.js --watch --progress --env env=dev",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,css,scss,md}\"",
     "lint": "eslint . --ignore-pattern package.json --ignore-pattern package-lock.json --ext .ts,.tsx,.js,.json",
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open"
