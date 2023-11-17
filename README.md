@@ -1,4 +1,4 @@
-# React Setup from Scratch using Functional Components and with AirBnB and A11y (Accessibility) ESLint Rules
+# React Setup from Scratch using TypeScript, Functional Components, and AirBnB and A11y (Accessibility) ESLint Rules
 
 ## How to Install
 
